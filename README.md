@@ -61,11 +61,11 @@ docker-compose run web sh -c "./test.sh"
 
 - **Tsatsu Adogla-Bessa Jnr**
 
-### Credit
+## Credit
 
 This project was primarily made possible by the power, simplicity and wizardry of FastAPI built by [tiangolo](https://github.com/tiangolo).
 I also took a lot of inspiration from his [full-stack-fastapi-postgres](https://github.com/tiangolo/full-stack-fastapi-postgresql) bootstrap project.
 
-### License
+## License
 
 This project is licensed under the terms of the MIT license.
