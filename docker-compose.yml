@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  web:
+    build:
+      context: .
+      args:
+        - ENVIRONMENT=${ENVIRONMENT}
+    volumes:
+      - .:/app
+    command: /app/startup.sh
+    container_name: fastapi-role-based-access-control-auth-service
+    ports:
+      - "${PORT}:8000"

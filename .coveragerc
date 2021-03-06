@@ -1,0 +1,40 @@
+[run]
+branch = True
+omit =
+        tests/*
+        app/initial_data.py
+        app/initial_test_data.py
+        app/pre_start.py
+        app/tests_pre_start.py
+        app/db/init_db.py
+        */__init__.py
+
+
+[report]
+omit =
+        tests/*
+        app/initial_data.py
+        app/initial_test_data.py
+        app/pre_start.py
+        app/db/init_db.py
+        app/tests_pre_start.py
+        */__init__.py
+
+# Regexes for lines to exclude from consideration
+exclude_lines =
+    # Have to re-enable the standard pragma
+    pragma: no cover
+
+    # Don't complain about missing debug-only code:
+    def __repr__
+    if self\.debug
+
+    # Don't complain if tests don't hit defensive assertion code:
+    raise AssertionError
+    raise NotImplementedError
+
+    # Don't complain if non-runnable code isn't run:
+    if 0:
+    if __name__ == .__main__.:
+
+ignore_errors = True

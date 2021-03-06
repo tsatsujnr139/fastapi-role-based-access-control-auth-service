@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "fastapi-role-based-access-control-auth-service"
+version = "0.1.0"
+description = ""
+authors = ["Tsatsu Adogla-Bessa Jnr <tsatsujnr@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.63.0"
+sqlalchemy = "^1.3.18"
+uvicorn = "^0.11.8"
+python-dotenv = "^0.14.0"
+python-multipart = "^0.0.5"
+python-jose = {extras = ["cryptography"], version = "^3.2.0"}
+passlib = "^1.7.2"
+pydantic = {extras = ["email"], version = "^1.6.1"}
+alembic = "^1.4.2"
+inflect = "^4.1.0"
+bcrypt = "^3.1.7"
+sqlalchemy_utils = "^0.36.8"
+psycopg2-binary = "^2.8.5"
+tenacity = "^6.2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.782"
+sqlalchemy-stubs = "^0.3"
+flake8 = "^3.8.3"
+autoflake = "^1.3.1"
+isort = "^5.3.2"
+black = "^19.10b0"
+pytest-cov = "^2.10.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
