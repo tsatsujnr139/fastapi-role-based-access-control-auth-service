@@ -80,6 +80,17 @@ def update_account(
     """
     Update an account.
     """
+
+    # If user is an account admin, check ensure they update their own account.
+    if current_user.user_role.role.name == Role.ACCOUNT_ADMIN["name"]:
+        if current_user.account_id != account_id:
+            raise HTTPException(
+                status_code=401,
+                detail=(
+                    "This user does not have the permissions to "
+                    "update this account"
+                ),
+            )
     account = crud.account.get(db, id=account_id)
     if not account:
         raise HTTPException(
