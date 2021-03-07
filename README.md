@@ -55,7 +55,7 @@ docker-compose run web sh -c "./test.sh"
 - [fastapi](https://fastapi.tiangolo.com/) - The web framework used
 - [docker](https://www.docker.com/) - For application containerization
 - [poetry](https://python-poetry.org/) - For dependency management
-- [alembic](https://python-poetry.org/) - For database migrations
+- [alembic](https://alembic.sqlalchemy.org/en/latest/) - For database migrations
 
 ## Authors
 
